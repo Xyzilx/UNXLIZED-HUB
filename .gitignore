@@ -1,41 +1,32 @@
-# Compiled Lua sources
-luac.out
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("UNXLIZED HUB", "Ocean")
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+-- MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
 
-# Precompiled Headers
-*.gch
-*.pch
+MainSection:NewButton("Infinite yield", "FE admin commands", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+MainSection:NewButton("Super-Human", "Makes you go fast and jump high", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 80
+end)
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+MainSection:NewButton("Bedwars vape", "Roblox Bedwars Vape hack", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+MainSection:NewButton("Ninja Legends 1", "Unlock all islands and autofarm!", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Blackout4781/Karma-Hub/main/Ninja%20Legends'))()
+end)
 
+MainSection:NewButton("Bedwars Future", "Roblox bedwars Future hack", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+MainSection:NewButton("V.g HUB", "Works on 150+ games!", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
