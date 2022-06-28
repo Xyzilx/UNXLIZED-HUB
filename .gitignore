@@ -26,7 +26,3 @@ end)
 MainSection:NewButton("Bedwars Future", "Roblox bedwars Future hack", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
 end)
-
-MainSection:NewButton("V.g HUB", "Works on 150+ games!", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-end)
